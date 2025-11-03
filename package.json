@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "ng serve --open --port 4200",
-    "build": "ng build"
-  },
+  "start": "ng serve --open --port 4200",
+  "build": "ng build --configuration production"
+},
   "dependencies": {
     "@angular/animations": "^16.2.12",
     "@angular/common": "^16.2.12",
