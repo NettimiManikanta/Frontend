@@ -1,0 +1,121 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.college-name {
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.college-address {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form-section input {
+  padding: 8px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.id-card {
+  width: 280px;
+  border: 2px solid #1e3a8a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  background: linear-gradient(to bottom right, #ffffff, #f0f4ff);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.id-card:hover {
+  transform: scale(1.03);
+}
+
+.id-top {
+  display: flex;
+  align-items: center;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 8px;
+}
+
+.college-logo {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+
+.photo-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.student-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #1e3a8a;
+}
+
+.info-section {
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.info-section p {
+  margin: 3px 0;
+}
+
+.barcode-section {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.barcode-section img {
+  width: 70px;
+  height: 70px;
+}
+
+.id-footer {
+  background-color: #e2e8f0;
+  padding: 5px;
+  font-size: 12px;
+}

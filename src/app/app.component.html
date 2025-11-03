@@ -1,0 +1,57 @@
+<div class="container">
+  <h2 class="college-name">BVC COLLEGE OF ENGINEERING</h2>
+  <p class="college-address">Palacherla, E.G., Rajahmundry, Andhra Pradesh</p>
+
+  <form (ngSubmit)="addStudent()" #studentForm="ngForm" class="form-section">
+    <input type="text" [(ngModel)]="student.name" name="name" placeholder="Full Name" required />
+    <input type="text" [(ngModel)]="student.fatherName" name="fatherName" placeholder="Father's Name" required />
+    <input type="date" [(ngModel)]="student.dob" name="dob" required />
+    <input type="text" [(ngModel)]="student.joinYear" name="joinYear" placeholder="Join Year" required />
+    <input type="text" [(ngModel)]="student.roll" name="roll" placeholder="Roll Number" required />
+    <input type="text" [(ngModel)]="student.address" name="address" placeholder="Address" required />
+    <button type="submit">Create ID</button>
+  </form>
+
+  <h3>Generated College ID Cards</h3>
+
+  <div class="cards-container">
+    <div *ngFor="let s of students" class="id-card">
+      <div class="id-top">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/f/fb/BVC_College_Of_Engineering_logo.png"
+          class="college-logo"
+          alt="College Logo"
+        />
+        <div>
+          <h4>BVC COLLEGE OF ENGINEERING</h4>
+          <p>Palacherla, Rajahmundry</p>
+        </div>
+      </div>
+
+      <div class="photo-section">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png"
+          alt="Student Photo"
+          class="student-photo"
+        />
+      </div>
+
+      <div class="info-section">
+        <p><strong>Name:</strong> {{ s.name }}</p>
+        <p><strong>Father's Name:</strong> {{ s.fatherName }}</p>
+        <p><strong>Roll No:</strong> {{ s.roll }}</p>
+        <p><strong>Join Year:</strong> {{ s.joinYear }}</p>
+        <p><strong>Expiry:</strong> {{ s.joinYear + 4 }}</p>
+        <p><strong>Address:</strong> {{ s.address }}</p>
+      </div>
+
+      <div class="barcode-section">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data={{s.roll}}&size=70x70" alt="QR Code" />
+      </div>
+
+      <div class="id-footer">
+        <p>Principal's Signature</p>
+      </div>
+    </div>
+  </div>
+</div>
